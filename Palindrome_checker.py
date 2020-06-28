@@ -17,7 +17,6 @@ def palindrome_check(input_string):
 
 #String Reversal Method
 def palindrome_check2(input_string):
-    first_half = input_string[0:len(input_string)//2]
-    second_half = input_string[len(input_string)//2+1:]
-    second_half = second_half[::-1]
-    return first_half == second_half
+    reversed_string = input_string[::-1]
+    return reversed_string == input_string
+
